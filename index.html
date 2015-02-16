@@ -28,7 +28,9 @@
     <![endif]-->
     
     <script src="assets/js/modernizr.custom.js"></script>
-    
+
+
+
   </head>
 
   <body>
@@ -58,7 +60,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-					<h1><img src="../../Google%20Диск/dceta/ceta-link/ceta-logo/logo.png" style="width: 300px; margin-top: 50px"></h1>
+					<h1><img src="assets/img/logo.png" style="width: 300px; margin-top: 50px"></h1>
 					<h2>We Create Cool Stuff</h2>
 					<div class="spacer"></div>
 					<a href="#portfolio"><i class="fa fa-angle-down"></i></a>
@@ -79,7 +81,207 @@
       	</div>
       </div><!-- /row -->
     </div><!-- /.container -->
-    
+
+    <div class="svg-wrap">
+        <svg width="64" height="64" viewBox="0 0 64 64">
+            <path id="arrow-left-2" d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z" />
+        </svg>
+        <svg width="64" height="64" viewBox="0 0 64 64">
+            <path id="arrow-right-2" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z" />
+        </svg>
+    </div>
+
+
+    <style>
+            /* SVG wrap */
+        .svg-wrap {
+            position: absolute;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .carousel-control {
+            top: 50%;
+            display: block;
+            outline: none;
+            text-align: left;
+            z-index: 1000;
+            width: auto;
+            opacity: 1;
+            bottom: auto;
+            text-shadow: none;
+            font-size: 1em;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .carousel-control:hover, .carousel-control:focus {
+            opacity: 1;
+        }
+
+        .carousel .icon-wrap {
+            position: relative;
+            z-index: 100;
+            display: block;
+            padding: 20px 10px;
+            border: 0 solid transparent;
+            background: rgba(0,0,0,0.4);
+            -webkit-transition: border-width 0.3s 0.15s;
+            transition: border-width 0.3s 0.15s;
+        }
+
+        .carousel svg.icon {
+            fill: #fff;
+        }
+
+        .carousel-control div {
+            position: absolute;
+            top: 50%;
+            padding: 20px;
+            width: 440px;
+            height: 144px;
+            background: #fff;
+            opacity: 1;
+            -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .carousel-control.left div {
+            left: 0;
+            padding: 20px 140px 20px 70px;
+            text-align: right;
+            -webkit-transform: translateY(-50%) translateX(-100%) scale(0.75);
+            transform: translateY(-50%) translateX(-100%) scale(0.75);
+        }
+
+        .carousel-control.right div {
+            right: 0;
+            padding: 20px 70px 20px 140px;
+            -webkit-transform: translateY(-50%) translateX(100%) scale(0.75);
+            transform: translateY(-50%) translateX(100%) scale(0.75);
+        }
+
+        .carousel-control span {
+            display: block;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ddd;
+            color: #cdcdcd;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            font-size: 0.7em;
+            line-height: 1.2;
+        }
+
+        .carousel-control h3 {
+            margin: 0;
+            padding: 8px 0 10px;
+            color: #818181;
+            font-weight: 300;
+            font-family: "Lato",sans-serif;
+            font-size: 1.325em;
+            line-height: 1.2;
+        }
+
+        .carousel-control div p {
+            margin: 0;
+            color: #b24e44;
+            font-style: italic;
+            font-size: 75%;
+            line-height: 1.25;
+            font-family: "Lucida Bright", Georgia, serif;
+        }
+
+        .carousel-control img {
+            position: absolute;
+            top: 20px;
+        }
+
+        .carousel-control.left img {
+            right: 20px;
+        }
+
+        .carousel-control.right img {
+            left: 20px;
+        }
+
+        .carousel-control:hover .icon-wrap {
+            border-top-width: 40px;
+            border-bottom-width: 40px;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+
+        .carousel-control:hover div {
+            opacity: 1;
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+            -webkit-transform: translateY(-50%) translateX(0) scale(1);
+            transform: translateY(-50%) translateX(0) scale(1);
+        }
+            /*   Bootstrap Customization   */
+        .carousel .carousel-control {
+            background-image: none;
+        }
+    </style>
+
+    <div>
+        <div id="dceta-slider" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#dceta-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#dceta-slider" data-slide-to="1"></li>
+                <li data-target="#dceta-slider" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="assets/img/about-bg.jpg" alt="...">
+                    <div class="carousel-caption">
+                        Slide1
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/img/about-bg.jpg" alt="...">
+                    <div class="carousel-caption">
+                        Slide2
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/img/about-bg.jpg" alt="...">
+                    <div class="carousel-caption">
+                        Slide3
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#dceta-slider"role="button" data-slide="prev">
+                <span class="icon-wrap"><svg class="icon" width="24" height="24" viewBox="0 0 64 64"><use xlink:href="#arrow-left-2"/></svg></span>
+                <div>
+                    <span>Previous Project</span>
+                    <h3>Child full of grace saviour of the human race</h3>
+                    <p>Learn More</p>
+                    <img src="ArrowNavigationStyles/ArrowNavigationStyles/img/22.png" alt="Previous thumb"/>
+                </div>
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#dceta-slider" role="button" data-slide="next">
+                <span class="icon-wrap"><svg class="icon" width="24" height="24" viewBox="0 0 64 64"><use xlink:href="#arrow-right-2"/></svg></span>
+                <div>
+                    <span>Next Project</span>
+                    <h3>Ancient rulage of grains and the trees of the night</h3>
+                    <p>Learn More</p>
+                    <img src="ArrowNavigationStyles/ArrowNavigationStyles/img/21.png" alt="Next thumb"/>
+                </div>
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
     <!-- PORTFOLIO SECTION -->
     <div id="portfolio" style="background:linear-gradient(to bottom, #007299 10%, #004b65 50%, #001f2e 90%)">
     	<div class="container">
