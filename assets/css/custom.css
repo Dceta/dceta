@@ -275,3 +275,56 @@ body {
     padding-top: 35px;
     padding-bottom: 35px;
 }
+
+#services {
+    /*background: #1abc9c;*/
+
+    margin-top: 25px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.bg_services{
+    position: absolute;
+    opacity: 0.5;
+    background: url(../img/dividers/1.jpeg) no-repeat center top; !important;
+    background-attachment: scroll;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg_call{
+    position: absolute;
+    opacity: 0.5;
+    background: url(../img/dividers/2.jpg) no-repeat center top; !important;
+    background-attachment: scroll;
+    background-position: center center;
+    min-height: 200px;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .bg_services{
+        visibility: hidden;
+    }
+
+}
+
+
