@@ -267,6 +267,7 @@ body {
 
 .carousel-inner .item {
     background:linear-gradient(to bottom, #cdeaff 10%, #e0f2ff 50%, #f4faff 90%);
+    /*background:linear-gradient(to bottom, #0997fe 10%, #0160a4 40%, #002743 80%, #001b2f 90%);*/
     height: 800px;
 }
 
@@ -287,9 +288,9 @@ body {
 .bg_services{
     position: absolute;
     opacity: 0.5;
-    background: url(../img/dividers/1.jpeg) no-repeat center top; !important;
-    background-attachment: scroll;
-    background-position: center center;
+    background: url(../img/dividers/1.jpeg) no-repeat scroll center center;
+/*    background-attachment: scroll;
+    background-position: center center;*/
     min-height: 500px;
     width: 100%;
     -webkit-background-size: 100%;
@@ -327,4 +328,26 @@ body {
 
 }
 
+/* Dots on Carousel Scale up */
 
+.carousel-indicators li {
+    /*margin: 0 16px;*/
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-indicators li {
+    -webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.carousel-indicators li:hover,
+.carousel-indicators li:focus {
+    background-color: white;
+}
+
+.carousel-indicators li.active {
+    background-color: white;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
