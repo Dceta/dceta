@@ -9,8 +9,10 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: Raleway;
-    font-weight: 300;
+    /*font-family: Raleway;
+    font-weight: 300;*/
+    font-family: Fira Sans;
+    font-weight: 500;
     color: #fff;
     /*color: #333;*/
 }
