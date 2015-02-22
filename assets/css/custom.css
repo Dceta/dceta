@@ -361,3 +361,104 @@ body {
 .app-text{
     color: #001b2f;
 }
+
+.btn {
+    font-family: Lato, sans-serif;
+}
+
+.btn-lg {
+    padding: 12px 20px;
+    /*font-family:Fira Sans, sans-serif;*/
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration:none;
+    display:inline-block;
+}
+
+.btn {
+    border: 1px solid #bbb;
+    color: #555;
+
+    background-color: #FAFAFA;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#DEDEDE));
+    background-image: -webkit-linear-gradient(top, #FAFAFA, #DEDEDE);
+    background-image: -moz-linear-gradient(top, #FAFAFA, #DEDEDE);
+    background-image: -ms-linear-gradient(top, #FAFAFA, #DEDEDE);
+    background-image: -o-linear-gradient(top, #FAFAFA, #DEDEDE);
+    background-image: linear-gradient(to bottom, #FAFAFA, #DEDEDE);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FAFAFA, endColorstr=#DEDEDE);
+
+    transition: background-color .2s ease-out;
+    background-clip: padding-box; /* Fix bleeding */
+    border-radius: 3px;
+/*    box-shadow: 0 1px 0 rgba(0, 0, 0, .3),
+    0 2px 2px -1px rgba(0, 0, 0, .5),
+    0 1px 0 rgba(255, 255, 255, .3) inset;*/
+    text-shadow: 0 1px 0 rgba(255,255,255, .9);
+
+}
+
+.btn:hover {
+    background-color: #fff; background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#EFEFEF));
+    background-image: -webkit-linear-gradient(top, #fff, #EFEFEF);
+    background-image: -moz-linear-gradient(top, #fff, #EFEFEF);
+    background-image: -ms-linear-gradient(top, #fff, #EFEFEF);
+    background-image: -o-linear-gradient(top, #fff, #EFEFEF);
+    background-image: linear-gradient(to bottom, #fff, #EFEFEF);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fff, endColorstr=#EFEFEF);
+}
+
+
+
+
+
+
+.blue-btn {
+    color: #fff;
+    border:1px solid #0997FE;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    background-color: #69bffe;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#69bffe), to(#0997FE));
+    background-image: -webkit-linear-gradient(top, #69bffe, #0997FE);
+    background-image: -moz-linear-gradient(top, #69bffe, #0997FE);
+    background-image: -ms-linear-gradient(top, #69bffe, #0997FE);
+    background-image: -o-linear-gradient(top, #69bffe, #0997FE);
+    background-image: linear-gradient(to bottom, #69bffe, #0997FE);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#69bffe, endColorstr=#0997FE);
+    transition: all 0.3s ease 0s;
+}
+.blue-btn:hover {
+    color: #fafafa;
+    border: 1px solid #017bd3;
+    background-color: #42AEFE;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#42AEFE), to(#017bd3));
+    background-image: -webkit-linear-gradient(top, #42AEFE, #017bd3);
+    background-image: -moz-linear-gradient(top, #42AEFE, #017bd3);
+    background-image: -ms-linear-gradient(top, #42AEFE, #017bd3);
+    background-image: -o-linear-gradient(top, #42AEFE, #017bd3);
+    background-image: linear-gradient(to bottom, #42AEFE, #017bd3);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#42AEFE, endColorstr=#017bd3);
+}
+
+.blue-btn:focus, .blue-btn:active, .blue-btn.active, .open .dropdown-toggle.blue-btn {
+    color: #efefef;
+    border:1px solid #015DA0;
+    background-color: #017BD3;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#017BD3), to(#015DA0));
+    background-image: -webkit-linear-gradient(top, #017BD3, #015DA0);
+    background-image: -moz-linear-gradient(top, #017BD3, #015DA0);
+    background-image: -ms-linear-gradient(top, #017BD3, #015DA0);
+    background-image: -o-linear-gradient(top, #017BD3, #015DA0);
+    background-image: linear-gradient(to bottom, #017BD3, #015DA0);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#017BD3, endColorstr=#015DA0);
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+input[type="text"], input[type="password"] {
+    -webkit-appearance: none;
+    /*-webkit-border-radius:0;*/
+}

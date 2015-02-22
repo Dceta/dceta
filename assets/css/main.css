@@ -60,20 +60,13 @@ hr {
     padding: 0;
 }
 .btn {
-    border-radius: 0;
+    border-radius: 3px;
 }
-.btn-green {
-    color: #fff;
-    background-color: #1abc9c;
-    border-color: #1abc9c;
-    font-weight: 300;
+.btn:focus {
+    outline: 0;
 }
-.btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active, .open .dropdown-toggle.btn-green {
-    color: #fff;
-    background-color: #16a085;
-    border-color: #16a085;
-    font-weight: 300;
-}
+
+
 .tm {
     font-size: 14px;
     line-height: 20px;
