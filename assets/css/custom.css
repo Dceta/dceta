@@ -148,7 +148,7 @@ body {
     background:#EEEEEE;
 }
 
-.pricing .bronze {
+/*.pricing .bronze {
     background-color: #B0C4DE;
 }
 
@@ -168,7 +168,7 @@ body {
 
 .pricing .gold-text {
     color:#FFD700;
-}
+}*/
 
 .pricing .content .plan {
     position:relative;
@@ -179,8 +179,8 @@ body {
     border-radius:7px;
     color:#777;
     box-shadow:5px 5px 0 rgba(0,0,0,0.05);
-    -webkit-transition:all .3s ease-out;
-    transition:all .3s ease-out;
+    -webkit-transition:all .5s ease-out;
+    transition:all .5s ease-out;
     margin-bottom:50px;
 }
 
@@ -193,9 +193,10 @@ body {
 
 .pricing .content .plan:hover,
 .pricing .content .plan.featured {
-    background:#5CC9DF;
-    color:#fff;
+    top:20px;
 }
+
+.plan:hover .price{ color: #ffb510 !important; }
 
 .pricing .content .plan h2 {
     font-size:28px;
@@ -225,11 +226,11 @@ body {
     transition:all .3s ease-out;
 }
 
-.pricing .content .plan.featured .icon,
+/*.pricing .content .plan.featured .icon,
 .pricing .content .plan:hover .icon{
     color:#5cc9df;
     background:#fff;
-}
+}*/
 
 .pricing .content .plan .btn-pricing {
     margin-top:20px;
@@ -238,11 +239,11 @@ body {
     padding:10px 20px;
 }
 
-.pricing .content .plan.featured .btn-pricing,
+/*.pricing .content .plan.featured .btn-pricing,
 .pricing .content .plan:hover .btn-pricing {
     background: #fff;
     color:#5CC9DF;
-}
+}*/
 
 .pricing .content .plan .price {
     font-size:48px;
@@ -334,4 +335,29 @@ body {
 
 .trigger:hover{
     opacity:0.9;
+}
+
+.pricing .content .plan .icon {
+    width: 100%;
+}
+
+.price{
+    -webkit-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+}
+
+.simple-text{
+    color: #0997fe;
+}
+
+.cms-text{
+    color: #0160a4;
+}
+
+.ecommerce-text{
+    color: #2a035e;
+}
+
+.app-text{
+    color: #001b2f;
 }
