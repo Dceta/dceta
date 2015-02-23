@@ -193,7 +193,7 @@ body {
 
 .pricing .content .plan:hover,
 .pricing .content .plan.featured {
-    /*top:20px;*/
+    top:25px;
 }
 
 .plan:hover .price {
@@ -321,6 +321,24 @@ body {
     background-attachment: scroll;
     background-position: center center;
     min-height: 350px;
+    min-height: 200px;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg_contact{
+    position: absolute;
+    background: url(../img/dividers/contacts.jpg) no-repeat center top; !important;
+    background-attachment: scroll;
+    background-position: center center;
+    min-height: 600px;
     width: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
