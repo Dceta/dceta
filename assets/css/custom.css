@@ -106,6 +106,7 @@
 }
 
 .carousel-control img {
+    width: 104px;
     position: absolute;
     top: 20px;
 }
@@ -289,6 +290,7 @@ body {
 
 #call {
     min-height: 350px;
+    z-index: 0;
 }
 
 .bg_services{
@@ -317,11 +319,11 @@ body {
     /*position: absolute;
     opacity: 0.2;*/
 
-    background: url(../img/dividers/2.jpg) no-repeat center top; !important;
+    /*background: url(../img/dividers/2.jpg) no-repeat center top; !important;*/
     background-attachment: scroll;
     background-position: center center;
     min-height: 350px;
-    min-height: 200px;
+
     width: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -331,6 +333,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 
 .bg_contact{
@@ -484,6 +487,8 @@ body {
     filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#017BD3, endColorstr=#015DA0);
 }
 
+/*   Default UI Reset   */
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
     padding: 0;
@@ -493,4 +498,27 @@ input::-moz-focus-inner {
 input[type="text"], input[type="password"] {
     -webkit-appearance: none;
     /*-webkit-border-radius:0;*/
+}
+
+
+#owl-example {
+    margin-top: 30px
+}
+
+#call {
+    position: relative;
+}
+
+#call:after {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: url(../img/ocean-reef.jpg);
+    /*background-size: cover;*/
+    background-position: 0 0 50%;
 }
