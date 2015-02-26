@@ -31,7 +31,7 @@ p {
     padding-top: 25px;
 }
 a {
-    color: #16a085;
+    color: #0997fe;
     word-wrap: break-word;
     -webkit-transition: color .1s ease-in, background .1s ease-in;
     -moz-transition: color .1s ease-in, background .1s ease-in;
@@ -40,7 +40,7 @@ a {
     transition: color .1s ease-in, background .1s ease-in;
 }
 a:hover, a:focus {
-    color: #7b7b7b;
+    color: #0160a4;/*#7b7b7b;*/
     text-decoration: none;
     outline: 0;
 }
