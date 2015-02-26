@@ -338,9 +338,9 @@ body {
 
 .bg_contact{
     position: absolute;
-    background: url(../img/dividers/contacts.jpg) no-repeat center top; !important;
+    /*background: url(../img/dividers/contacts.jpg) no-repeat center top !important;
     background-attachment: scroll;
-    background-position: center center;
+    background-position: center center;*/
     min-height: 600px;
     width: 100%;
     -webkit-background-size: 100%;
@@ -518,7 +518,40 @@ input[type="text"], input[type="password"] {
     left: 0;
     right: 0;
     z-index: -1;
-    background: url(../img/ocean-reef.jpg);
+    background: url(../img/ocean-reef.jpg) no-repeat scroll center top;
     /*background-size: cover;*/
-    background-position: 0 0 50%;
 }
+
+.social {
+    margin-top: 30px;
+    margin-bottom: 40px
+
+}
+.social > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #001B2F;
+    text-align: center;
+}
+.social > a + a {
+    margin-left: 20px;
+}
+.social > a:hover {
+    background: #0997FE;
+    color: #001B2F;
+}
+.social > a > i {
+    vertical-align: middle;
+}
+
+.contact  {
+    font-family: 'Fira Sans';
+    font-size: 18px;
+    line-height: 1.6;
+}
+ .contact > .fa {
+     margin-right: 10px
+ }
