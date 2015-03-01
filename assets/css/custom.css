@@ -194,7 +194,11 @@ body {
 
 .pricing .content .plan:hover,
 .pricing .content .plan.featured {
-    top:25px;
+    -moz-transform:translatey(-5px);
+    -ms-transform:translatey(-5px);
+    -o-transform:translatey(-5px);
+    -webkit-transform:translatey(-5px);
+    transform:translatey(-5px);
 }
 
 .plan:hover .price {
@@ -512,13 +516,13 @@ input[type="text"], input[type="password"] {
 #call:after {
     content: "";
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.2;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: -1;
-    background: url(../img/ocean-reef.jpg) no-repeat scroll center top;
+    background: url(../img/dividers/7.jpg) no-repeat scroll center right;
     /*background-size: cover;*/
 }
 
