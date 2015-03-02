@@ -30,19 +30,28 @@
     opacity: 1;
 }
 
+.carousel .left .icon-wrap {
+    padding-left: 10px;
+}
+
+.carousel .right .icon-wrap {
+    padding-right: 10px;
+}
+
 .carousel .icon-wrap {
     position: relative;
     z-index: 100;
     display: block;
-    padding: 20px 10px;
+    padding: 20px;
     border: 0 solid transparent;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.25);
     -webkit-transition: border-width 0.3s 0.15s;
     transition: border-width 0.3s 0.15s;
 }
 
-.carousel svg.icon {
+.carousel .icon {
     fill: #fff;
+    vertical-align: middle;
 }
 
 .carousel-control div {
@@ -105,23 +114,23 @@
     font-family: "Lucida Bright", Georgia, serif;
 }
 
-.carousel-control img {
+.carousel-control div img {
     width: 104px;
     position: absolute;
     top: 20px;
 }
 
-.carousel-control.left img {
+.carousel-control.left div img {
     right: 20px;
 }
 
-.carousel-control.right img {
+.carousel-control.right div img {
     left: 20px;
 }
 
 .carousel-control:hover .icon-wrap {
-    border-top-width: 40px;
-    border-bottom-width: 40px;
+    border-top-width: 27px;
+    border-bottom-width: 27px;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }
@@ -528,17 +537,19 @@ input[type="text"], input[type="password"] {
 
 .social {
     margin-top: 30px;
-    margin-bottom: 40px
+    margin-bottom: 40px;
+    text-align: center;
 
 }
 .social > a {
     display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     background: #fff;
     color: #001B2F;
-    text-align: center;
+    border-radius: 50%;
+
 }
 .social > a + a {
     margin-left: 20px;
