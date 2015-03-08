@@ -189,6 +189,10 @@ body {
     border-radius:7px;
     color:#777;
     box-shadow: 5px 5px 0 rgba(0,0,0,0.05);
+
+    -moz-transform:all .5s ease-out;
+    -ms-transform:all .5s ease-out;
+    -o-transform:all .5s ease-out;
     -webkit-transition: all .5s ease-out;
     transition:all .5s ease-out;
     margin-bottom:50px;
