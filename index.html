@@ -105,45 +105,36 @@
             <div class="carousel-inner" role="listbox">
                 <div class="item active" style="background-image: url(slider/cvrme.png); background-size: cover">
                     <div class="container">
-                        <div class="col-md-5 slider-info wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s">
+                        <div class="col-md-6 col-sm-8 col-xs-10 slider-info wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s">
                             <h2 style="font-weight: 100">Cover Me</h2>
                             <p>
                                 One of our latest works. Community-driven online archive of high-quality album covers. On this resource you can download any of album covers for free, just in one click, no matter what device or platform you use, visit <a href="singleproject.html">cvrme.com</a>
                             </p>
                         </div>
                     </div>
-                    <div class="carousel-caption">
-                        Cover Me
-                    </div>
                 </div>
 
-                <div class="item" style="background-image: url(slider/coincosm.png); background-size: cover">
+                <div class="item" id="coincosm" style="background-image: url(slider/coincosm.png); background-position: right bottom; background-repeat: no-repeat; background-size: cover">
                     <div class="container">
-                        <div class="col-md-5 slider-info wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s">
+                        <div class="col-lg-5 col-md-6 slider-info wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s" style="margin-top: 200px;">
                             <h2 style="font-weight: 100">Coincosm</h2>
                             <p>
-
                                 Web-based wallet that makes Bitcoin simple to understand & to use. Coincosm was specifically designed for new users who are only making a first step into a world of financial management freedom, available soon at <a href="singleproject.html">coincosm.com</a>
                             </p>
                         </div>
                     </div>
-                    <div class="carousel-caption">
-                        Coincosm
-                    </div>
                 </div>
 
-                <div class="item" style="background-image: url(slider/woodluck.png); background-size: cover">
+                <div class="item" ><!--style="background-image: url(slider/woodluck.png); background-size: cover"-->
                     <div class="container">
-                        <div class="col-md-4 slider-info wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s">
+                        <div class="col-lg-4 col-md-3 col-sm-12 slider-info wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s"  style="margin-top: 200px;">
                             <h2 style="font-weight: 100">Woodluck</h2>
                             <p>
-
                                 Website to explore the custom handmade furniture, made by the professionals from Woodluck company. All the solutions are exclusive and developed according to the specific needs of a customer. Only the highest-quality wood is used, explore <a href="singleproject.html">woodluck.com.ua</a>
                             </p>
                         </div>
-                    </div>
-                    <div class="carousel-caption">
-                        Woodluck
+                        <div class="col-lg-8 col-md-9 col-sm-12 wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s"  style="background-image: url(slider/cut/woodluck.png); background-size: cover; background-position: top right; height: 800px; padding-top: 80px" >
+                        </div>
                     </div>
                 </div>
             </div>
@@ -152,9 +143,9 @@
             <a class="left carousel-control" href="#dceta-slider" role="button" data-slide="prev">
                 <span class="icon-wrap"><img class="icon" src="index.png"/><!--<svg class="icon" width="24" height="24" viewBox="0 0 64 64"><use xlink:href="#arrow-left-2"/></svg>--></span>
                 <div>
-                    <span>Previous Project</span>
-                    <h3>Child full of grace saviour of the human race</h3>
-                    <p>Learn More</p>
+                    <!--<span>Previous Project</span>
+                    <h3>Woodluck</h3>
+                    &lt;!&ndash;<p>Learn More</p>&ndash;&gt;-->
                     <img src="assets/img/slider/1.jpg" alt="Previous thumb"/>
                 </div>
                 <span class="sr-only">Previous</span>
@@ -162,9 +153,9 @@
             <a class="right carousel-control" href="#dceta-slider" role="button" data-slide="next">
                 <span class="icon-wrap"><img class="icon" src="index-2.png"/><!--<svg class="icon" width="24" height="24" viewBox="0 0 64 64"><use xlink:href="#arrow-right-2"/></svg>--></span>
                 <div>
-                    <span>Next Project</span>
-                    <h3>Ancient rulage of grains and the trees of the night</h3>
-                    <p>Learn More</p>
+                    <!--<span>Next Project</span>
+                    <h3>Cover Me</h3>
+                    &lt;!&ndash;<p>Learn More</p>&ndash;&gt;-->
                     <img src="assets/img/slider/2.jpg" alt="Next thumb"/>
                 </div>
                 <span class="sr-only">Next</span>
@@ -213,9 +204,9 @@
 
                 </div>
             </div><!-- /row -->
-            <div class="col-lg-12">
+            <!--<div class="col-lg-12">
                 <p class="centered"><button type="button" class="btn btn-lg blue-btn"><b>Meet the team</b></button></p>
-            </div>
+            </div>-->
         </div><!-- /.container -->
 
         <!-- SERVICES SECTION -->
@@ -376,7 +367,7 @@
                                 <p>Responsive Landing Page</p>
                                 <p>Up to 2 pages</p>
                                 <p>1 Design Revise</p>
-                                <a class="btn btn-pricing" href="#" target="_blank">Order Now</a>
+                                <button class="btn btn-pricing" data-toggle="modal" data-target="#order">Order Now</button>
                             </div>
                         </div>
 
@@ -388,7 +379,7 @@
                                 <p>Wordpress / Drupal</p>
                                 <p>Up to 4 pages</p>
                                 <p>2 Design Revises</p>
-                                <a class="btn btn-pricing" href="#" target="_blank">Order Now</a>
+                                <button class="btn btn-pricing" data-toggle="modal" data-target="#order">Order Now</button>
                             </div>
                         </div>
 
@@ -400,7 +391,7 @@
                                 <p>Custom Ecommerce CMS</p>
                                 <p>Pages # TBD</p>
                                 <p>3 Design Revises</p>
-                                <a class="btn btn-pricing" href="#" target="_blank">Order Now</a>
+                                <button class="btn btn-pricing" data-toggle="modal" data-target="#order">Order Now</button>
                             </div>
                         </div>
 
@@ -412,7 +403,7 @@
                                 <p>Node.js based</p>
                                 <p>Custom UI/UX</p>
                                 <p>Real-time process control</p>
-                                <a class="btn btn-pricing" href="#" target="_blank">Order Now</a>
+                                <button class="btn btn-pricing" data-toggle="modal" data-target="#order">Order Now</button>
                             </div>
                         </div>
 
@@ -433,7 +424,7 @@
                         <h3 class="wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s">CAN'T FIND YOUR PLAN?</h3>
                         <div class="col-lg-8 col-lg-offset-2">
                             <p>You may  provide us with specific requirements of your project </p>
-                            <p><button type="button" class="btn btn-green btn-lg blue-btn"><b>Start Your Project Now</b></button></p>
+                            <p><button type="button" class="btn btn-green btn-lg blue-btn" data-toggle="modal" data-target="#order"><b>Start Your Project Now</b></button></p>
                         </div>
                     </div><!-- row -->
                 </div><!-- container -->
@@ -441,7 +432,63 @@
 
         </div><!-- Call to action -->
 
-
+        <!-- Modal -->
+        <div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        div class="col-md-8">
+                        <div class="">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                Name</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">
+                                                Email Address</label>
+                                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="subject">
+                                                Subject</label>
+                                            <select id="subject" name="subject" class="form-control" required="required">
+                                                <option value="na" selected="">Choose One:</option>
+                                                <option value="service">General Customer Service</option>
+                                                <option value="suggestions">Suggestions</option>
+                                                <option value="product">Product Support</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                Message</label>
+                                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                                      placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-primary pull-right blue-btn" id="btnContactUs">
+                                            Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer class="footer">
             <div class="container">
                 <div class="row mt">
