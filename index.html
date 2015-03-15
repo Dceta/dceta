@@ -88,6 +88,11 @@
             <path id="arrow-right-2" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z" />
         </svg>
     </div>
+
+    <div class="logo-main">
+        <img src="logo.png">
+    </div>
+
     <div id="dceta-slider" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -98,39 +103,45 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <div class="col-md-4 slider-info wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s">
-                        <h2 style="font-weight: 100">Cover Me</h2>
-                        <p>
-                            One of our latest works. Community-driven online archive of high-quality album covers. On this resource you can download any of album covers for free, just in one click, no matter what device or platform you use, visit <a href="singleproject.html">cvrme.com</a>
-                        </p>
-
+                <div class="item active" style="background-image: url(slider/cvrme.png); background-size: cover">
+                    <div class="container">
+                        <div class="col-md-5 slider-info wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s">
+                            <h2 style="font-weight: 100">Cover Me</h2>
+                            <p>
+                                One of our latest works. Community-driven online archive of high-quality album covers. On this resource you can download any of album covers for free, just in one click, no matter what device or platform you use, visit <a href="singleproject.html">cvrme.com</a>
+                            </p>
+                        </div>
                     </div>
-                    <img class="img-responsive" src="slider/cvrme.png" style="margin: 0 auto"/>
                     <div class="carousel-caption">
                         Cover Me
                     </div>
                 </div>
-                <div class="item">
-                    <div class="col-md-4 slider-info wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s">
-                        <h2 style="font-weight: 100">Coincosm</h2>
-                        <p>
-                           Web-based wallet that makes Bitcoin simple to understand & to use. Coincosm was specifically designed for new users who are only making a first step into a world of financial management freedom, available soon at <a href="singleproject.html">coincosm.com</a>
-                        </p>
+
+                <div class="item" style="background-image: url(slider/coincosm.png); background-size: cover">
+                    <div class="container">
+                        <div class="col-md-5 slider-info wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s">
+                            <h2 style="font-weight: 100">Coincosm</h2>
+                            <p>
+
+                                Web-based wallet that makes Bitcoin simple to understand & to use. Coincosm was specifically designed for new users who are only making a first step into a world of financial management freedom, available soon at <a href="singleproject.html">coincosm.com</a>
+                            </p>
+                        </div>
                     </div>
-                    <img class="img-responsive" src="slider/coincosm.png" style="margin: 0 auto"/>
                     <div class="carousel-caption">
                         Coincosm
                     </div>
                 </div>
-                <div class="item">
-                    <div class="col-md-4 slider-info wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s">
-                        <h2 style="font-weight: 100">Woodluck</h2>
-                        <p>
-                         Website to explore the custom handmade furniture, made by the professionals from Woodluck company. All the solutions are exclusive and developed according to the specific needs of a customer. Only the highest-quality wood is used, explore <a href="singleproject.html">woodluck.com.ua</a>
-                        </p>
+
+                <div class="item" style="background-image: url(slider/woodluck.png); background-size: cover">
+                    <div class="container">
+                        <div class="col-md-4 slider-info wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s">
+                            <h2 style="font-weight: 100">Woodluck</h2>
+                            <p>
+
+                                Website to explore the custom handmade furniture, made by the professionals from Woodluck company. All the solutions are exclusive and developed according to the specific needs of a customer. Only the highest-quality wood is used, explore <a href="singleproject.html">woodluck.com.ua</a>
+                            </p>
+                        </div>
                     </div>
-                    <img class="img-responsive" src="slider/woodluck.png" style="margin: 0 auto"/>
                     <div class="carousel-caption">
                         Woodluck
                     </div>
@@ -292,10 +303,10 @@
         </style>
 
         <!-- CLIENTS LOGOS -->
-        <div id="lg">
-            <div class=""><!--container-->
-                <h2 class="centered">OUR LATEST WORK</h2>
-                <div id="owl-example" class="centered owl-carousel" ><!--        -->
+       <!-- <div id="lg">
+            <div class="">&lt;!&ndash;container&ndash;&gt;
+
+                <div id="owl-example" class="centered owl-carousel" >&lt;!&ndash;        &ndash;&gt;
                     <div class="">
                         <img src="assets/img/clients/knu.jpg" alt="">
                     </div>
@@ -314,12 +325,39 @@
                     <div class="">
                         <img src="assets/img/clients/socktribe.png" alt="">
                     </div>
+                </div>&lt;!&ndash; row &ndash;&gt;
+            </div>&lt;!&ndash; container &ndash;&gt;
+        </div>--><!-- #lg -->
+
+        <!-- PORTFOLIO SECTION -->
+        <div id="portfolio" >
+
+            <div class="container">
+                <div class="row mt">
+                    <h2 class="centered">OUR LATEST WORK</h2>
+                    <ul class="grid effect-2" id="grid">
+                        <li><a href="singleproject.html"><img src="assets/img/portfolio/1.jpg"></a></li>
+                        <li><a href="singleproject.html"><img src="assets/img/portfolio/3.jpg"></a></li>
+                        <li><a href="singleproject.html"><img src="assets/img/portfolio/4.jpg"></a></li>
+                        <li><a href="singleproject.html"><img src="assets/img/portfolio/12.png"></a></li>
+                        <li><a href="singleproject.html"><img src="assets/img/portfolio/13.png"></a></li>
+                        <li><a href="singleproject.html"><img src="assets/img/portfolio/10.png"></a></li>
+                        <!--<li><a href="singleproject.html"><img src="assets/img/portfolio/9.jpg"></a></li>
+                        <li><a href="singleproject.html"><img src="assets/img/portfolio/2.jpg"></a></li>
+                        <li><a href="singleproject.html"><img src="assets/img/portfolio/14.png"></a></li>
+                        <li><a href="singleproject.html"><img src="assets/img/portfolio/5.jpg"></a></li>
+                        <li><a href="singleproject.html"><img src="assets/img/portfolio/6.jpg"></a></li>
+                        <li><a href="singleproject.html"><img src="assets/img/portfolio/7.jpg"></a></li>
+                        <li><a href="singleproject.html"><img src="assets/img/portfolio/6.jpg"></a></li>
+                        <li><a href="singleproject.html"><img src="assets/img/portfolio/9.jpg"></a></li>
+                        <li><a href="singleproject.html"><img src="assets/img/portfolio/11.png"></a></li>-->
+                    </ul>
                 </div><!-- row -->
             </div><!-- container -->
-        </div><!-- dg -->
+        </div><!-- portfolio -->
+
 
         <!-- Pricing -->
-
         <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 
         <div id="pricing" class="pricing">
@@ -535,12 +573,12 @@
         });
     </script>
 
-<!--	<script>
+	<script>
 		new AnimOnScroll( document.getElementById( 'grid' ), {
 			minDuration : 0.4,
 			maxDuration : 0.7,
 			viewportFactor : 0.2
 		} );
-	</script>-->
+	</script>
   </body>
 </html>

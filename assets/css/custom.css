@@ -288,7 +288,7 @@ body {
 }
 
 .carousel-inner .item {
-    background:linear-gradient(to bottom, #cdeaff 10%, #e0f2ff 50%, #f4faff 90%);
+    /*background:linear-gradient(to bottom, #cdeaff 10%, #e0f2ff 50%, #f4faff 90%);*/
     height: 800px;
 }
 
@@ -595,9 +595,9 @@ input[type="text"], input[type="password"] {
 }
 
 .slider-info {
-    position: absolute;
+    /*position: absolute;
     left: 80px;
-    top: 40px;
+    top: 40px;*/
     color: #777;
 }
 
@@ -612,4 +612,36 @@ input[type="text"], input[type="password"] {
 .slider-info a:hover {
     border-bottom: 1px none transparent;
     /*text-decoration: underline*/
+}
+
+.item {
+    padding-top: 80px
+}
+
+
+.logo-main {
+    padding: 15px;
+    z-index: 3000;
+    width: 120px;
+    position: fixed;
+    top: 0;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);
+}
+.logo-main > img {
+    width: 100%
+}
+
+/*
+.item.active:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background :url(../../slider/cvrme.png); background-size: cover;
+}
+*/
+
+.carousel-inner {
+    background-image: linear-gradient(to bottom, #cdeaff 10%, #e0f2ff 50%, #f4faff 90%);
 }
