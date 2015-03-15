@@ -593,3 +593,23 @@ input[type="text"], input[type="password"] {
 .owl-theme .owl-controls .owl-buttons div.owl-next {
     background-position: 40px 0;
 }
+
+.slider-info {
+    position: absolute;
+    left: 80px;
+    top: 40px;
+    color: #777;
+}
+
+.slider-info h2 {
+    color: #555
+}
+.slider-info a {
+    border-bottom: 1px solid #0997FE;
+    /*text-decoration: underline*/
+}
+
+.slider-info a:hover {
+    border-bottom: 1px none transparent;
+    /*text-decoration: underline*/
+}
