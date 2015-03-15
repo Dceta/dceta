@@ -24,6 +24,9 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
 
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -35,7 +38,6 @@
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="assets/js/ripple.js"></script>
-
 
       <!-- Important Owl stylesheet -->
       <link rel="stylesheet" href="owl.carousel/owl-carousel/owl.carousel.css">
@@ -57,17 +59,16 @@
   </head>
 
   <body>
-
+  <a name="tp"></a>
 	<!-- Menu -->
 	<nav class="menu" id="theMenu">
 		<div class="menu-wrap">
-			<h1 class="logo"><a href="index.html#headerwrap">DCETA</a></h1>
-			<i class="fa fa-arrow-right menu-close"></i>
-			<a href="index.html">Home</a>
-			<a href="services.html">Services</a>
-			<a href="portfolio.html">Portfolio</a>
-			<a href="about.html">About</a>
-			<a href="#contact">Contact</a>
+			<h1 class="logo"><a href="#tp" class="smoothScroll">DCETA Studio</a></h1>
+			<!--<i class="fa fa-arrow-right menu-close"></i>-->
+            <a href="#srvc" class="smoothScroll">Services</a>
+            <a href="#prtfl" class="smoothScroll">Portfolio</a>
+            <a href="#prcng" class="smoothScroll">Pricing</a>
+			<a href="#cntct" class="smoothScroll">Contact</a>
 			<a href="https://www.facebook.com/dcetas"><i class="fa fa-facebook"></i></a>
 			<a href="https://twitter.com/dcetas"><i class="fa fa-twitter"></i></a>
 			<a href="https://dribbble.com/dcetas"><i class="fa fa-dribbble"></i></a>
@@ -89,8 +90,17 @@
         </svg>
     </div>
 
-    <div class="logo-main">
-        <img src="logo.png">
+    <div class="logo-main wow fadeInLeft" data-wow-duration="3s"  data-wow-delay="1s">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+	 width="70px" height="35px" viewBox="0 0 70 35" enable-background="new 0 0 70 35" xml:space="preserve">
+<polygon opacity="0.25" points="60.535,4.56 69.777,29.828 53.888,34.416 "/>
+<polygon opacity="0.25" points="43.313,1.962 58.913,4.944 54.103,9.353 48.641,35.713 47.029,7.316 "/>
+<polygon opacity="0.25" points="31.283,33.41 31.283,1.695 42.092,2.277 36.386,11.834 44.309,17.552 36.363,21.346 42.383,33.609
+	"/>
+<polygon opacity="0.25" points="29.635,1.962 22.878,3.524 16.147,17.741 21.949,31.795 27.991,32.48 22.069,17.372 "/>
+<polygon opacity="0.25" points="0,0 14.564,16.489 0.957,33.588 "/>
+</svg>
+
     </div>
 
     <div id="dceta-slider" class="carousel slide" data-ride="carousel">
@@ -212,7 +222,7 @@
         <!-- SERVICES SECTION -->
         <div id="services">
             <div class="container">
-
+                <a name="srvc"></a>
                 <h2 class="centered">WHAT WE DO</h2>
 
                 <div class="row mt">
@@ -321,10 +331,12 @@
         </div>--><!-- #lg -->
 
         <!-- PORTFOLIO SECTION -->
-        <div id="portfolio" >
+        <section id="portfolio" class="section">
+        <div>
 
             <div class="container">
                 <div class="row mt">
+                    <a name="prtfl"></a>
                     <h2 class="centered">OUR LATEST WORK</h2>
                     <ul class="grid effect-2" id="grid">
                         <li><a href="singleproject.html"><img src="assets/img/portfolio/1.jpg"></a></li>
@@ -346,6 +358,7 @@
                 </div><!-- row -->
             </div><!-- container -->
         </div><!-- portfolio -->
+        </section>
 
 
         <!-- Pricing -->
@@ -353,7 +366,7 @@
 
         <div id="pricing" class="pricing">
             <div class="container">
-
+                <a name="prcng"></a>
                 <h2 class="centered">OUR PRICES</h2>
 
                 <div class="row content">
@@ -411,9 +424,6 @@
                 </div>
             </div><!-- container -->
         </div><!-- pricing section -->
-
-
-
 
         <!-- CALL TO ACTION -->
         <div id="call">
@@ -493,7 +503,8 @@
             <div class="container">
                 <div class="row mt">
                     <div class="col-lg-6">
-                        <h1>Stay Connected</h1>
+                        <a name="cntct"></a>
+                        <h1>Contact Information</h1>
                     </div>
                 </div><!-- row -->
                 <div class="row">
@@ -534,7 +545,6 @@
 	<script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/classie.js"></script>
 	<script src="assets/js/AnimOnScroll.js"></script>
-
 
     <!-- Include js plugin -->
     <script src="owl.carousel/owl-carousel/owl.carousel.js"></script>
@@ -627,5 +637,15 @@
 			viewportFactor : 0.2
 		} );
 	</script>
+
+    <script type="text/javascript">
+        $(function(){
+            $("#nav a").click(function(e){
+                e.preventDefault();
+                $('html,body').scrollTo(this.hash,this.hash);
+            });
+        });
+    </script>
+
   </body>
 </html>
