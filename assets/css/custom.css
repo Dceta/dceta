@@ -130,8 +130,9 @@
 }
 
 .carousel-control:hover .icon-wrap {
-    border-top-width: 27px;
-    border-bottom-width: 27px;
+    /*border-top-width: 27px;
+    border-bottom-width: 27px;*/
+    background: rgba(0,0,0,0.2);
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }

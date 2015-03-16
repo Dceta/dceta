@@ -350,46 +350,58 @@ hr {
     -o-background-size: cover;
     background-size: cover;
 }
+
 #portfolio {
-    width: 100%}
+    width: 100%
+}
+
 #services {
     /*background: #1abc9c;*/
     margin-top: 25px;
     padding-top: 35px;
     padding-bottom: 35px;
 }
+
 #services h3 {
     color: #fff;
 }
+
 /*#services p {
     color: #fff;
 }*/
+
 #services i {
     color: #fff;
     font-size: 35px;
     margin-top: 22px;
 }
+
 #lg {
     /*background: #ebebeb;*/
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
 }
+
 #lg .desc {
     text-align: left;
 }
+
 #call {
     /*background: #2f2f2f;
     padding-top: 35px;
     padding-bottom: 35px;*/
     text-align: center;
 }
+
 #call h3 {
     color: #fff;
 }
+
 #call p {
     color: #fff;
 }
+
 #sf {
     display: block;
     width: 100%}
