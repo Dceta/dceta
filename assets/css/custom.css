@@ -624,7 +624,7 @@ input[type="text"], input[type="password"] {
 .logo-main {
     margin-left: 20px;
     padding: 15px;
-    z-index: 3000;
+    z-index: 1000;
     width: 100px;
     position: fixed;
     top: 0;
@@ -703,5 +703,5 @@ label {
 }
 
 .modal-body {
-    padding-top: 0px;
+    padding-top: 0;
 }
