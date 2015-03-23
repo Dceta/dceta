@@ -170,7 +170,7 @@
 
 
 <canvas id="ripple"></canvas>
-<div id="ripple-control"></div>
+<div id="ripple-control" style="height:300px"></div>
 
 
 <div class="underwater">
@@ -285,7 +285,7 @@
         <div class="row content">
             <div class="col-lg-12 col-lg-offset-0">
 
-                <div class="col-lg-3 col-md-6 text-center wow fadeIn" data-wow-delay="0.2s" data-wow-duration="1s">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.2s" data-wow-duration="1s">
                     <div class="plan">
                         <img style="width:250px" src="assets/img/prices/turtle.jpg" alt="Turtle">
                         <h2 class="simple-text">Simple website</h2>
@@ -297,7 +297,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 text-center wow fadeIn" data-wow-delay="0.4s" data-wow-duration="1s">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.4s" data-wow-duration="1s">
                     <div class="plan"><!-- featured -->
                         <img style="width:250px" src="assets/img/prices/dolphin.jpg" alt="Dolphin">
                         <h2 class="cms-text">CMS Operated</h2>
@@ -309,7 +309,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 text-center wow fadeIn" data-wow-delay="0.6s" data-wow-duration="1s">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.6s" data-wow-duration="1s">
                     <div class="plan">
                         <img style="width:250px" src="assets/img/prices/shark.jpg" alt="Shark">
                         <h2 class="ecommerce-text">Ecommerce</h2>
@@ -321,7 +321,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 text-center wow fadeIn" data-wow-delay="0.8s" data-wow-duration="1s">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.8s" data-wow-duration="1s">
                     <div class="plan">
                         <img style="width:250px" src="assets/img/prices/whale.jpg" alt="Whale">
                         <h2 class="app-text">Web Application</h2>
@@ -339,14 +339,15 @@
 </div><!-- pricing section -->
 
 <!-- CALL TO ACTION -->
-<div id="call">
+<div id="call" class="img-holder" data-image="assets/img/dividers/7.jpg">
 
     <div class="bg_call">
         <div class="container">
-            <div class="row">
-                <h3 class="wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s">CAN'T FIND YOUR PLAN?</h3>
+            <div class="row centered" style="-webkit-transform: translateZ(1px); -moz-transform: translateZ(1px); margin-top: 60px;">
+               <!-- class="wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s"-->
+                <h3 class="centered">CAN'T FIND YOUR PLAN?</h3>
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p>Please, provide us with the specific requirements of your project and we will get back to you soon.</p>
+                    <p>Quote estimation with a speed of a black marlin.</p>
                     <p><button type="button" class="btn btn-green btn-lg blue-btn quote" data-toggle="modal" data-target="#order"><b>Get a Free Quote</b></button></p>
                 </div>
             </div><!-- row -->
@@ -424,7 +425,7 @@
                 <h4 class="modal-title" id="myModalLabel">Nice choice!</h4>
             </div>
             <div class="modal-body">
-                <div class="">
+                <div>
                     <form>
                         <div class="row">
                             <div class="col-md-6">
@@ -523,11 +524,23 @@
 <script src="assets/js/imagesloaded.js"></script>
 <script src="assets/js/classie.js"></script>
 <script src="assets/js/AnimOnScroll.js"></script>
+<script src="assets/js/jquery.imageScroll.min.js"></script>
+
 <script>
     new AnimOnScroll( document.getElementById( 'grid' ), {
         minDuration : 0.4,
         maxDuration : 0.7,
         viewportFactor : 0.2
+    });
+</script>
+
+<script>
+    var touch = Modernizr.touch;
+    $('.img-holder').imageScroll({
+        imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+        touch: touch,
+        holderMaxHeight:350,
+        speed: 0.6
     });
 </script>
 
