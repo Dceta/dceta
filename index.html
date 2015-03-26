@@ -191,7 +191,7 @@
 
             <div class="col-lg-4 col-md-4 col-xs-12 wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s">
                 <div class="centered">
-                    <span style="font-size: 120pt; font-weight: 500; font-family: 'Fira Sans'">&</span>
+                    <span style="font-size: 120pt; font-weight: 500; font-family: 'Fira Sans'">+</span>
                 </div>
             </div>
 
@@ -345,7 +345,7 @@
         <div class="container">
             <div class="row centered" style="-webkit-transform: translateZ(1px); -moz-transform: translateZ(1px); margin-top: 60px;">
                <!-- class="wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s"-->
-                <h3 class="centered">CAN'T FIND YOUR PLAN?</h3>
+                <h3 class="centered">ALREADY GOT A PROJECT IN MIND?</h3>
                 <div class="col-lg-8 col-lg-offset-2">
                     <p>Quote estimation with a speed of a black marlin.</p>
                     <p><button type="button" class="btn btn-green btn-lg blue-btn quote" data-toggle="modal" data-target="#order"><b>Get a Free Quote</b></button></p>
@@ -524,8 +524,6 @@
 <script src="assets/js/imagesloaded.js"></script>
 <script src="assets/js/classie.js"></script>
 <script src="assets/js/AnimOnScroll.js"></script>
-<script src="assets/js/jquery.imageScroll.min.js"></script>
-
 <script>
     new AnimOnScroll( document.getElementById( 'grid' ), {
         minDuration : 0.4,
@@ -533,16 +531,18 @@
         viewportFactor : 0.2
     });
 </script>
-
+<script src="assets/js/jquery.imageScroll.min.js"></script>
 <script>
     var touch = Modernizr.touch;
     $('.img-holder').imageScroll({
         imageAttribute: (touch === true) ? 'image-mobile' : 'image',
         touch: touch,
         holderMaxHeight:350,
-        speed: 0.6
+        speed: 0.6,
+        parallax: true
     });
 </script>
+
 
 </body>
 </html>
