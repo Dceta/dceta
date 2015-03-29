@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        #owl-example img {
+            max-width: 400px;
+            width: 100%
+        }
+    </style>
+    <!-- Include js plugin -->
+    <script src="owl.carousel/owl-carousel/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#owl-example").owlCarousel({
+
+// Most important owl features
+                //items : 5,
+                itemsCustom : false,
+                itemsDesktop : [1440,4],
+                itemsDesktopSmall : [980,3],
+                itemsTablet: [768,2],
+                itemsTabletSmall: false,
+                itemsMobile : [479,1],
+                singleItem : false,
+                itemsScaleUp : false,
+
+//Basic Speeds
+                slideSpeed : 200,
+                paginationSpeed : 800,
+                rewindSpeed : 1000,
+
+//Autoplay
+                autoPlay : false,
+                stopOnHover : false,
+
+// Navigation
+                navigation : false,
+                navigationText : ["‹","›"],
+                rewindNav : true,
+                scrollPerPage : false,
+
+//Pagination
+                pagination : true,
+                paginationNumbers: false,
+
+// Responsive
+                responsive: true,
+                responsiveRefreshRate : 200,
+                responsiveBaseWidth: window,
+
+// CSS Styles
+                baseClass : "owl-carousel",
+                theme : "owl-theme",
+
+//Lazy load
+                lazyLoad : true,
+                lazyFollow : true,
+                lazyEffect : "fade",
+
+//Auto height
+                autoHeight : false,
+
+//JSON
+                jsonPath : false,
+                jsonSuccess : false,
+
+//Mouse Events
+                dragBeforeAnimFinish : true,
+                mouseDrag : true,
+                touchDrag : true,
+
+//Transitions
+                transitionStyle : false,
+
+// Other
+                addClassActive : false,
+
+//Callbacks
+                beforeUpdate : false,
+                afterUpdate : false,
+                beforeInit: false,
+                afterInit: false,
+                beforeMove: false,
+                afterMove: false,
+                afterAction: false,
+                startDragging : false,
+                afterLazyLoad : false
+
+            });
+
+        });
+    </script>
+
+
+</head>
+<body>
+
+
+
+<!-- CLIENTS LOGOS -->
+ <div id="lg">
+     <div class=""><!--container-->
+
+                <div id="owl-example" class="centered owl-carousel" ><!--        -->
+                    <div class="">
+                        <img src="assets/img/clients/knu.jpg" alt="">
+                    </div>
+                    <div class="">
+                        <img src="assets/img/clients/bungee.png" alt="">
+                    </div>
+                    <div class="">
+                        <img src="assets/img/clients/knu.jpg" alt="">
+                    </div>
+                    <div class="">
+                        <img src="assets/img/clients/bungee.png" alt="">
+                    </div>
+                    <div class="">
+                        <img src="assets/img/clients/knu.jpg" alt="">
+                    </div>
+                    <div class="">
+                        <img src="assets/img/clients/socktribe.png" alt="">
+                    </div>
+                </div><!-- row -->
+            </div><!-- container -->
+        </div> <!--#lg -->
+
+
+</body>
+</html>
