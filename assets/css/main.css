@@ -333,7 +333,7 @@ hr {
     color: #fff;
 }
 #sp-standout {
-   /* background: url(../img/sp-standout-bg.jpg) no-repeat center top;*/
+    background: url(../img/dividers/3.png) no-repeat center top;
     margin-top: -10px;
     padding-top: 20px;
     text-align: center;
