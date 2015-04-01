@@ -856,3 +856,21 @@ label {
     margin: 0 auto;
     margin-bottom: 50px;
 }
+
+.cardinfo {
+    background: none repeat scroll 0% 0% #FFF;
+    padding: 15px;
+    /*margin: 2px;*/
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-radius:3px;
+}
+
+.cardinfo p{
+     color:#333;
+ }
+.cardinfo h4,h6{
+    color:#333;
+}
