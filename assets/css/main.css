@@ -512,7 +512,7 @@ hr {
     margin: 2px;
     text-align: left;
 }
-.cardinfo i {
+.cardinfo span {
     font-size: 18px;
     padding-right: 20px;
 }

@@ -424,7 +424,6 @@ body {
     font-family: Lato, sans-serif;
     padding: 10px 20px;
     font-size: 16px;
-    font-weight: bold;
 }
 
 .btn-lg {
@@ -763,7 +762,7 @@ label {
     margin-bottom: 10px;
 }
 
-.tags li, .tags a{
+.tags li, .tags span{
     float:left;
     height:24px;
     line-height:24px;
@@ -772,7 +771,7 @@ label {
     margin-bottom: 10px;
 }
 
-.tags a{
+.tags span{
     margin-left:20px;
     padding:0 10px 0 12px;
     background: #0045db;
@@ -787,7 +786,7 @@ label {
     border-top-right-radius:4px;
 }
 
-.tags a:before{
+.tags span:before{
     content:"";
     float:left;
     position:absolute;
@@ -800,7 +799,7 @@ label {
     border-width:12px 12px 12px 0;
 }
 
-.tags a:after{
+.tags span:after{
     content:"";
     position:absolute;
     top:10px;
@@ -817,7 +816,7 @@ label {
     box-shadow:-1px -1px 2px #004977;
 }
 
-.tags-2 a{
+.tags-2 span{
     margin-left:20px;
     padding:0 10px 0 12px;
     background: #6830ba;
@@ -832,7 +831,7 @@ label {
     border-top-right-radius:4px;
 }
 
-.tags-2 a:before{
+.tags-2 span:before{
     content:"";
     float:left;
     position:absolute;
@@ -845,7 +844,7 @@ label {
     border-width:12px 12px 12px 0;
 }
 
-.tags-2 a:after{
+.tags-2 span:after{
     content:"";
     position:absolute;
     top:10px;
