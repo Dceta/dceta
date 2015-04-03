@@ -1,3 +1,11 @@
+/*   TYPOGRAPHY   */
+h3 {
+    font-size: 30px;
+}
+h4 {
+    font-size: 24px;
+}
+
 /* SVG wrap */
 .svg-wrap {
     position: absolute;
@@ -605,7 +613,7 @@ input[type="text"], input[type="password"] {
     color: #777;
 }
 
-.slider-info h2 {
+.slider-info h3 {
     color: #555
 }
 .slider-info a {
