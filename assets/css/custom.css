@@ -882,3 +882,12 @@ label {
 .cardinfo h4,h6{
     color:#333;
 }
+
+.footer h4 {
+    font-size: 36px
+}
+.footer h5 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
