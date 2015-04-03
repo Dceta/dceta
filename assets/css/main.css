@@ -125,7 +125,7 @@ hr {
 .menu a:active {
     color: #fff;
 }
-.menu a>i {
+.menu a > .fa {
     float: left;
     display: inline-block;
     vertical-align: middle;
