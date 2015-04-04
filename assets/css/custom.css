@@ -612,6 +612,7 @@ input[type="text"], input[type="password"] {
     /*position: absolute;
     left: 80px;
     top: 40px;*/
+    z-index: 1000;
     color: #777;
 }
 
