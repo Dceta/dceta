@@ -333,12 +333,10 @@ hr {
     color: #fff;
 }
 #sp-standout {
-    background: url(../img/dividers/3.png) no-repeat center top;
+    background: scroll url(../img/dividers/3.png) no-repeat center center;
     margin-top: -10px;
     padding-top: 20px;
     text-align: center;
-    background-attachment: scroll;
-    background-position: center center;
     min-height: 500px;
     width: 100%;
     -webkit-background-size: 100%;

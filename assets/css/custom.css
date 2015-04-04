@@ -299,7 +299,7 @@ body {
 
 .carousel-inner .item {
     /*background:linear-gradient(to bottom, #cdeaff 10%, #e0f2ff 50%, #f4faff 90%);*/
-    height: 800px;
+    height: 730px;
 }
 
 #pricing {
@@ -629,7 +629,7 @@ input[type="text"], input[type="password"] {
 }
 
 .slider-info {
-    padding-top: 80px
+    /*padding-top: 80px*/
 }
 
 
@@ -679,20 +679,43 @@ input[type="text"], input[type="password"] {
 
 
 @media screen and (max-width: 991px) {
-    .slider-info {
+/*    .slider-info {
         margin-top: 0 !important;
+    }*/
+    #woodluck {
+        margin-top: -15% !important
     }
 }
 @media screen and (max-width: 1199px) {
-    .slider-info {
+    /*.slider-info {
         margin-top: 0 !important;
-    }
-    #coincosm {
-        background-position: right 100px !important
+    }*/
+}
+
+@media screen and (min-width: 992px) {
+    .slider-info.v-float {
+        margin-top: 200px !important;
     }
 }
 
+@media screen and (min-width: 992px) {
+    #coincosm {
+        margin-top: -350px !important
+    }
+}
+@media screen and (min-width: 1342px) {
+    #coincosm {
+        margin-top: -500px !important
+    }
+}
 
+@media screen and (max-width: 1500px) {
+    .pull-down {
+        margin-top: 380px !important
+    }
+}
+/*
+}
 @media screen and (max-width: 735px) {
     #coincosm {
         background-position: right 120px !important
@@ -701,8 +724,8 @@ input[type="text"], input[type="password"] {
 @media screen and (max-width: 560px) {
     #coincosm {
         background-position: right 150px !important
-    }
-}
+    }*/
+
 
 
 label {
