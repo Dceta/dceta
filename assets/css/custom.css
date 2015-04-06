@@ -197,7 +197,7 @@ body {
     padding-top:40px;
     padding-bottom:40px;
     border-radius:3px; /*7px initial*/
-    color:#777;
+    color: #606060;
     box-shadow: 5px 5px 0 rgba(0,0,0,0.05);
 
     -moz-transform:all .5s ease-out;
@@ -242,7 +242,8 @@ body {
 
 .pricing .content .plan p {
     margin-bottom:5px;
-    font-weight:400;
+    /*font-weight:300;*/
+    font-size: 14px;
 }
 
 .pricing .content .plan .icon {

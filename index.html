@@ -43,13 +43,7 @@
 
         ga('create', 'UA-60676385-1', 'auto');
         ga('send', 'pageview');
-
-        $('.quote').on('click', function() {
-            ga('send', 'event', 'button', 'click', 'quote');
-        });
-
     </script>
-
 </head>
 
 <body>
@@ -322,11 +316,15 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.2s" data-wow-duration="1s">
                     <div class="plan">
                         <img style="width:250px" src="assets/img/prices/turtle.jpg" alt="Turtle">
-                        <h2 class="simple-text">Simple website</h2>
-                        <p class="simple-text price">$559</p>
-                        <p>Responsive Landing Page</p>
-                        <p>Up to 2 pages</p>
-                        <p>1 Design Revise</p>
+                        <h2 class="simple-text">Basic Website</h2>
+                        <p class="simple-text price">$599</p>
+                        <p>1 year FREE Hosting</p>
+                        <p>FREE Domain name*</p>
+                        <p>Up to 3 unique pages</p>
+                        <p>Responsive Design</p>
+                        <p>Contact Form</p>
+                        <p>3 Free hours of educational sessions</p>
+                        <p>1 design revises</p>
                         <button class="btn btn-grey btn-pricing quote1" data-toggle="modal" data-target="#order_web">Order Now</button>
                     </div>
                 </div>
@@ -334,11 +332,18 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.4s" data-wow-duration="1s">
                     <div class="plan"><!-- featured -->
                         <img style="width:250px" src="assets/img/prices/dolphin.jpg" alt="Dolphin">
-                        <h2 class="cms-text">CMS Operated</h2>
-                        <p class="cms-text price">$789</p>
-                        <p>Wordpress / Drupal</p>
-                        <p>Up to 4 pages</p>
-                        <p>2 Design Revises</p>
+                        <h2 class="cms-text">Advanced Website</h2>
+                        <p class="cms-text price">$759</p>
+                        <p>1 year FREE Hosting</p>
+                        <p>FREE Domain name*</p>
+                        <p>Up to 5 unique pages</p>
+                        <p>Responsive Design</p>
+                        <p>Contact Form</p>
+                        <p>5 Free hours of educational sessions</p>
+                        <p>2 design revises</p>
+                        <p>Easy Content Management System</p>
+                        <p>404 Page design</p>
+                        <p>Site Statistics</p>
                         <button class="btn btn-grey btn-pricing" data-toggle="modal" data-target="#order_web">Order Now</button>
                     </div>
                 </div>
@@ -346,11 +351,22 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.6s" data-wow-duration="1s">
                     <div class="plan">
                         <img style="width:250px" src="assets/img/prices/shark.jpg" alt="Shark">
-                        <h2 class="ecommerce-text">Ecommerce</h2>
-                        <p class="ecommerce-text price">$1299</p>
-                        <p>Custom Ecommerce CMS</p>
-                        <p>Pages # TBD</p>
-                        <p>3 Design Revises</p>
+                        <h2 class="ecommerce-text">Premium Website</h2>
+                        <p class="ecommerce-text price">$999</p>
+                        <p>1 year FREE Hosting</p>
+                        <p>FREE Domain name*</p>
+                        <p>Up to 7 unique pages</p>
+                        <p>Responsive Design</p>
+                        <p>Contact Form</p>
+                        <p>8 Free hours of educational sessions</p>
+                        <p>3 design revises</p>
+                        <p>Custom Content Management System</p>
+                        <p>404 Page design</p>
+                        <p>Advanced Site Statistics</p>
+                        <p>Company Blog</p>
+                        <p>Basic SEO Consultation</p>
+                        <p>Integration of Payment Solutions</p>
+                        <p>FREE week of after-launch support</p>
                         <button class="btn btn-grey btn-pricing" data-toggle="modal" data-target="#order_web">Order Now</button>
                     </div>
                 </div>
@@ -359,10 +375,14 @@
                     <div class="plan">
                         <img style="width:250px" src="assets/img/prices/whale.jpg" alt="Whale">
                         <h2 class="app-text">Web Application</h2>
-                        <p class="app-text price">TBD</p>
-                        <p>Node.js based</p>
-                        <p>Custom UI/UX</p>
-                        <p>Real-time process control</p>
+                        <p class="app-text price">$1999</p>
+                        <p>Business Requirements Specification</p>
+                        <p>UX/UI Design and Testing</p>
+                        <p>BRS-based Back-End Technology</p>
+                        <p>Node.js, Ruby, Python, Meteor</p>
+                        <p>Data Management Software Implementation</p>
+                        <p>Flexible Front-End Application</p>
+                        <p>1 month of FREE tech support</p>
                         <button class="btn btn-grey btn-pricing" data-toggle="modal" data-target="#order_web">Order Now</button>
                     </div>
                 </div>
@@ -382,7 +402,7 @@
                 <h4 class="centered">ALREADY GOT A PROJECT IN MIND?</h4>
                 <div class="col-lg-8 col-lg-offset-2">
                     <p>Quote estimation with a speed of a black marlin.</p>
-                    <p><button type="button" class="btn btn-green btn-lg blue-btn quote" data-toggle="modal" data-target="#order">Get a Free Quote</button></p>
+                    <p><button type="button" id="quote" class="btn btn-green btn-lg blue-btn" data-toggle="modal" data-target="#order">Get a Free Quote</button></p>
                 </div>
             </div><!-- row -->
         </div><!-- container -->
@@ -637,6 +657,20 @@
         $(this).css('margin-top', $(this).parent().height()-$(this).height())
     });*/
 </script><!--    Remove this later   -->
+
+<script>
+
+    var downloadLink = document.getElementById('quote');
+    addListener(downloadLink, 'click', function() {
+        ga('send', 'event', 'button', 'click', 'quote');
+    });
+
+    function addListener(element, type, callback) {
+        if (element.addEventListener) element.addEventListener(type, callback);
+        else if (element.attachEvent) element.attachEvent('on' + type, callback);
+    }
+
+</script>
 
 
 </body>
