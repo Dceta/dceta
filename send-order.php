@@ -9,6 +9,6 @@
     $message = "Имя: " . $name . "\n" . "Телефон: " . $number;
     $headers = 'From: Dceta Studio <support@dceta.com/>' . "\r\n";
  
-    /*mail($to, $subject, $message, $headers);*/
+    mail($to, $subject, $message, $headers);
     echo "Dceta";
 ?>
