@@ -926,3 +926,21 @@ label {
     line-height: 28px;
     margin-bottom: 25px;
 }
+
+a.remote {
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px 2px;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 1px 0px #fff;
+    transition: box-shadow 0.2s ease 0s;
+}
+
+a.remote:hover {
+    color: #fff;
+    box-shadow: 0px 4px 0px #fff;
+}
