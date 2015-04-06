@@ -7,7 +7,7 @@
     $to = 'dceta@email.com';
     $subject = 'Order';
     $message = "Имя: " . $name . "\n" . "Телефон: " . $number;
-    $headers = 'From: Dceta Studio <support@dceta.com/>' . "\r\n";
+    $headers = 'From: Dceta Studio <support@dceta.com>' . "\r\n";
  
     mail($to, $subject, $message, $headers);
     echo "Dceta";
