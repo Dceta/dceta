@@ -83,6 +83,25 @@
     <svg width="64" height="64" viewBox="0 0 64 64">
         <path id="arrow-right-2" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z" />
     </svg>
+    <svg class="loader" version="1.1" id="Layer2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							     width="24px" height="30px" viewBox="0 0 24 30" style="display:none; enable-background:new 0 0 50 50;" xml:space="preserve">
+							    <rect x="0" y="10" width="4" height="10" fill="#333" opacity="0.2">
+							      <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0s" dur="0.6s" repeatCount="indefinite" />
+							      <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0s" dur="0.6s" repeatCount="indefinite" />
+							      <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0s" dur="0.6s" repeatCount="indefinite" />
+							    </rect>
+							    <rect x="8" y="10" width="4" height="10" fill="#333"  opacity="0.2">
+							      <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+							      <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+							      <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+							    </rect>
+							    <rect x="16" y="10" width="4" height="10" fill="#333"  opacity="0.2">
+							      <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+							      <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+							      <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+							    </rect>
+							  </svg>
+
 </div>
 
 <div class="logo-main wow fadeInLeft" data-wow-duration="3s"  data-wow-delay="1s">
@@ -379,7 +398,7 @@
             </div>
             <div class="modal-body">
                 <div class="">
-                    <form>
+                    <form class="send-form">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -429,7 +448,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary pull-right blue-btn" id="btnContactUs1">
+                                <button type="submit" class="btn btn-primary pull-right blue-btn send" id="btnContactUs1">
                                     Send Message</button>
                             </div>
                         </div>
@@ -452,7 +471,7 @@
             </div>
             <div class="modal-body">
                 <div>
-                    <form>
+                    <form class="send-form">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -489,7 +508,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary pull-right blue-btn" id="btnContactUs">
+                                <button type="submit" class="btn btn-primary pull-right blue-btn send" id="btnContactUs">
                                     Send Message</button>
                             </div>
                         </div>
@@ -546,7 +565,34 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+<script>
+    $(document).ready(function () {
+        $('.send').click(function (e) {
+            e.preventDefault();
+            $(this).addClass('btn-disabled');
+            $(this).prop('disabled', true);
+            /*$('.loader').show();
+            $('#send > span').html("");*/
 
+            /*name1
+            email1
+            subject1
+            message1*/
+
+            $.post("send-order.php", $(this).parents(".send-form").serialize(),function (response) {
+                /*$('.loader').delay(2000).hide(function () {*/
+                    /*$('#send > span').html("Спасибо!");*/
+                    /*$('#success').html(response).fadeIn();
+                    $('#success').delay(2000).fadeOut();
+                });*/
+
+            }).delay(2000).done(function () {
+                        $(this).removeClass('btn-disabled');
+                        $(this).prop('disabled', false);
+                    });
+        });
+    });
+</script>
 <script src="assets/js/wow.min.js"></script>
 <script>
     new WOW().init();
