@@ -438,7 +438,7 @@ body {
     display:inline-block;
 }
 
-.btn {
+.btn-grey {
     border: 1px solid #bbb;
     color: #555;
 
@@ -460,7 +460,7 @@ body {
 
 }
 
-.btn:hover {
+.btn-grey:hover {
     background-color: #fff; background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#EFEFEF));
     background-image: -webkit-linear-gradient(top, #fff, #EFEFEF);
     background-image: -moz-linear-gradient(top, #fff, #EFEFEF);
