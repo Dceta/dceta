@@ -675,9 +675,13 @@
 <script>
 
     var downloadLink = document.getElementsByClassName('order');
-    addListener(downloadLink, 'click', function() {
-        ga('send', 'event', 'button', 'click', 'order');
-    });
+    var names = '';
+    for(var i=0; i<downloadLink.length; i++) {
+        names += downloadLink[i].name;
+        addListener(downloadLink, 'click', function() {
+            ga('send', 'event', 'button', 'click', 'order');
+        });
+    }
 
     function addListener(element, type, callback) {
         if (element.addEventListener) element.addEventListener(type, callback);
