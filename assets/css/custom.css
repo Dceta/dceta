@@ -711,8 +711,59 @@ input[type="text"], input[type="password"] {
 }
 
 @media screen and (max-width: 1500px) {
-    .pull-down {
+    /*.pull-down {
         margin-top: 380px !important
+    }*/
+}
+@media screen and (max-width: 968px) {
+    .pull-down {
+        float: left !important;
+        position: absolute;
+        bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
+    #cover-me {
+        background-position: left -175px !important;
+    }
+}
+@media screen and (max-width: 1255px) {
+    #cover-me {
+        background-position: -60px -150px !important;
+    }
+}
+@media screen and (max-width: 968px) {
+
+}
+@media screen and (max-width: 968px) {
+
+}
+@media screen and (max-width: 941px) {
+    #coincosm-vignette {
+        margin-top: 100px !important
+    }
+}
+
+@media (min-width: 1342px) and (max-width: 1694px) {
+    #coincosm {
+        margin-right: -25px !important
+    }
+}
+
+@media screen and (max-width: 665px) {
+    #woodluck {
+        margin-top: 0 !important
+    }
+    #coincosm-vignette {
+        margin-top: 200px !important
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #woodluck {
+        margin-top: 100px !important
     }
 }
 /*

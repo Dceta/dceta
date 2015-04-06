@@ -123,7 +123,7 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner carousel-fade" role="listbox">
-        <div class="item active" style="background: url(slider/new/cover-me.png) left -275px no-repeat; background-size: cover;">
+        <div id="cover-me" class="item active" style="background: url(slider/new/cover-me.png) left -280px no-repeat; background-size: cover;">
             <div class="container" style="height: inherit;">
                <!-- <div class="col-md-5 col-sm-8 col-xs-10 slider-info"></div>
                 <div class="col-md-2 col-sm-8 col-xs-10 slider-info"></div>-->
@@ -139,7 +139,7 @@
         <div class="item"><!--style="background: url(slider/coincosm-copy.png) right center no-repeat; background-size: 80%"-->
 
             <div class="container">
-                <div class="col-lg-5 col-md-5 slider-info wow fadeIn v-float" data-wow-duration="1s"  data-wow-delay="1s"><!--style="margin-top: 200px;"-->
+                <div id="coincosm-vignette" class="col-lg-5 col-md-5 slider-info wow fadeIn v-float" data-wow-duration="1s"  data-wow-delay="1s"><!--style="margin-top: 200px;"-->
                     <h3 style="font-weight: 100">Coincosm</h3>
                     <p>
                         Web-based wallet that makes Bitcoin simple to understand & to use. Coincosm was specifically designed for new users who are only making a first step into a world of financial management freedom, dive into <a href="coincosm">details</a>
@@ -160,7 +160,7 @@
                 <div class="col-lg-4 col-md-3 col-sm-12 slider-info wow fadeIn v-float pull-right" data-wow-duration="1s"  data-wow-delay="1s">
                     <h3 style="font-weight: 100">Woodluck</h3>
                     <p>
-                        Website to explore the custom handmade furniture, made by the professionals from Woodluck company. All the solutions are exclusive and developed according to the specific needs of a customer. Only the highest-quality wood is used, explore <br><a href="woodluck">project resume</a>
+                        Website to explore the custom handmade furniture, made by the professionals from Woodluck company. All the solutions are exclusive and developed according to the specific needs of a customer. Only the highest-quality wood is used, explore <a href="woodluck">project resume</a>
                     </p>
                 </div>
 
@@ -608,7 +608,7 @@
                  $('#success').delay(2000).fadeOut();
                  });*/
 
-            })/*.delay(2000).done(function () {
+            });/*.delay(2000).done(function () {
                         $(this).removeClass('btn-disabled');
                         $(this).prop('disabled', false);
                     });*/
