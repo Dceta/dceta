@@ -927,7 +927,7 @@ label {
     margin-bottom: 25px;
 }
 
-a.remote {
+a.external {
     color: #fff;
     display: inline-block;
     font-size: 18px;
@@ -940,7 +940,7 @@ a.remote {
     transition: box-shadow 0.2s ease 0s;
 }
 
-a.remote:hover {
+a.external:hover {
     color: #fff;
     box-shadow: 0px 4px 0px #fff;
 }
