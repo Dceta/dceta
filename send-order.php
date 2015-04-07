@@ -23,7 +23,7 @@
      $from = "Dceta Studio <support@dceta.com>";
      $to = "Dceta Studio <dceta@email.com>";
      $subject = "Hi!";
-     $body = $name." ".$msg." ".$email;
+     $body = $name." ".$message." ".$email;
 
      $host = "customers.freehosting.com";
      $username = "support@dceta.com";
