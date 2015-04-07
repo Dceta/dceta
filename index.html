@@ -325,7 +325,7 @@
                         <p>Contact Form</p>
                         <p>3 Free hours of educational sessions</p>
                         <p>1 design revises</p>
-                        <button class="btn btn-grey btn-pricing order" data-toggle="modal" data-target="#order_web">Order Now</button>
+                        <button id="order-basic" class="btn btn-grey btn-pricing" data-toggle="modal" data-target="#order_web">Order Now</button>
                     </div>
                 </div>
 
@@ -344,7 +344,7 @@
                         <p>Easy Content Management System</p>
                         <p>404 Page design</p>
                         <p>Site Statistics</p>
-                        <button class="btn btn-grey btn-pricing order" data-toggle="modal" data-target="#order_web">Order Now</button>
+                        <button id="order-advanced" class="btn btn-grey btn-pricing order" data-toggle="modal" data-target="#order_web">Order Now</button>
                     </div>
                 </div>
 
@@ -367,7 +367,7 @@
                         <p>Basic SEO Consultation</p>
                         <p>Integration of Payment Solutions</p>
                         <p>FREE week of after-launch support</p>
-                        <button class="btn btn-grey btn-pricing order" data-toggle="modal" data-target="#order_web">Order Now</button>
+                        <button id="order-premium" class="btn btn-grey btn-pricing order" data-toggle="modal" data-target="#order_web">Order Now</button>
                     </div>
                 </div>
 
@@ -383,7 +383,7 @@
                         <p>Data Management Software Implementation</p>
                         <p>Flexible Front-End Application</p>
                         <p>1 month of FREE tech support</p>
-                        <button class="btn btn-grey btn-pricing order" data-toggle="modal" data-target="#order_web">Order Now</button>
+                        <button id="order-webapp" class="btn btn-grey btn-pricing order" data-toggle="modal" data-target="#order_web">Order Now</button>
                     </div>
                 </div>
 
@@ -665,6 +665,7 @@
         ga('send', 'event', 'button', 'click', 'quote');
     });
 
+
     function addListener(element, type, callback) {
         if (element.addEventListener) element.addEventListener(type, callback);
         else if (element.attachEvent) element.attachEvent('on' + type, callback);
@@ -673,22 +674,57 @@
 </script>
 
 <script>
+    var downloadLink = document.getElementById('order-basic');
+    addListener(downloadLink, 'click', function() {
+        ga('send', 'event', 'button', 'click', 'order');
+    });
 
-    var downloadLink = document.getElementsByClassName('order');
-    var names = '';
-    for(var i=0; i<downloadLink.length; i++) {
-        names += downloadLink[i].name;
-        addListener(downloadLink, 'click', function() {
-            ga('send', 'event', 'button', 'click', 'order');
-        });
-    }
 
     function addListener(element, type, callback) {
         if (element.addEventListener) element.addEventListener(type, callback);
         else if (element.attachEvent) element.attachEvent('on' + type, callback);
     }
-
 </script>
+
+<script>
+    var downloadLink = document.getElementById('order-advanced');
+    addListener(downloadLink, 'click', function() {
+        ga('send', 'event', 'button', 'click', 'order');
+    });
+
+
+    function addListener(element, type, callback) {
+        if (element.addEventListener) element.addEventListener(type, callback);
+        else if (element.attachEvent) element.attachEvent('on' + type, callback);
+    }
+</script>
+
+<script>
+    var downloadLink = document.getElementById('order-premium');
+    addListener(downloadLink, 'click', function() {
+        ga('send', 'event', 'button', 'click', 'order');
+    });
+
+
+    function addListener(element, type, callback) {
+        if (element.addEventListener) element.addEventListener(type, callback);
+        else if (element.attachEvent) element.attachEvent('on' + type, callback);
+    }
+</script>
+
+<script>
+    var downloadLink = document.getElementById('order-webapp');
+    addListener(downloadLink, 'click', function() {
+        ga('send', 'event', 'button', 'click', 'order');
+    });
+
+
+    function addListener(element, type, callback) {
+        if (element.addEventListener) element.addEventListener(type, callback);
+        else if (element.attachEvent) element.attachEvent('on' + type, callback);
+    }
+</script>
+
 
 </body>
 </html>
