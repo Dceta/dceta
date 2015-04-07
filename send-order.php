@@ -9,18 +9,20 @@
     $headers = 'From: Dceta Studio <support@dceta.com>' . "\r\n";
 
     mail($to, $subject, $message, $headers);
-    echo "Dceta";*/
+    echo "Dceta";
+    $msg = $_POST["message"]
+    ." ".$msg*/
 
 
      require_once "Mail.php";
 
      $name = $_POST["name"]
-     $msg = $_POST["message"]
+
 
      $from = "Dceta Studio <support@dceta.com>";
      $to = "Dceta Studio <dceta@email.com>";
      $subject = "Hi!";
-     $body = $name." ".$msg;
+     $body = $name;
 
      $host = "customers.freehosting.com";
      $username = "support@dceta.com";
