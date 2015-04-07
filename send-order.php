@@ -19,11 +19,12 @@
      $name = $_POST["name"];
      $message = $_POST["message"];
      $email = $_POST["email"];
+     $subject = $_POST["subject"];
 
      $from = "Dceta Studio <support@dceta.com>";
      $to = "Dceta Studio <dceta@email.com>";
      $subject = "Hi!";
-     $body = $name." ".$message." ".$email;
+     $body = $name." ".$message." ".$email." ".$subject;
 
      $host = "customers.freehosting.com";
      $username = "support@dceta.com";
