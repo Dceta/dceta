@@ -593,7 +593,7 @@
              subject1
              message1*/
 
-            $.post("send-order.php", $(this).parents("#send-form").serialize(),function (response) {
+            $.post("send-order.php", $(this).parents(".send-form").serialize(),function (response) {
                 /*$('.loader').delay(2000).hide(function () {*/
                 /*$('#send > span').html("Спасибо!");*/
                 /*$('#success').html(response).fadeIn();
