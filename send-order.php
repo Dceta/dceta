@@ -14,8 +14,8 @@
 
      require_once "Mail.php";
 
-    $name = $_POST["name"]
-    $message = $_POST["message"]
+     $name = $_POST["name"]
+     $message = $_POST["message"]
 
      $from = "Dceta Studio <support@dceta.com>";
      $to = "Dceta Studio <dceta@email.com>";
