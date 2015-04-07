@@ -17,12 +17,13 @@
      require_once "Mail.php";
 
      $name = $_POST["name"];
-     $msg = $_POST["message"];
+     $message = $_POST["message"];
+     $email = $_POST["email"];
 
      $from = "Dceta Studio <support@dceta.com>";
      $to = "Dceta Studio <dceta@email.com>";
-     $subject = "Hi!"." ".$msg;
-     $body = $name;
+     $subject = "Hi!";
+     $body = $name." ".$msg." ".$email;
 
      $host = "customers.freehosting.com";
      $username = "support@dceta.com";
