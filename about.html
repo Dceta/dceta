@@ -44,11 +44,6 @@
 
         ga('create', 'UA-60676385-1', 'auto');
         ga('send', 'pageview');
-
-        $('.quote').on('click', function() {
-            ga('send', 'event', 'button', 'click', 'quote');
-        });
-
     </script>
 
 </head>
@@ -161,7 +156,7 @@
                     <h4 class="centered" style="text-transform:uppercase;">Ready to start?</h4>
                     <div class="col-lg-8 col-lg-offset-2">
                         <p>Ready to start a project? Feeling curious about how this works? Let’s talk about your idea. Because we like to always come prepared, please fill out our project inquiry form. Be as specific as possible.</p>
-                        <button type="button" class="btn btn-green btn-lg blue-btn quote" data-toggle="modal" data-target="#order">Get a Free Quote</button>
+                        <button type="button" id="quote" class="btn btn-green btn-lg blue-btn quote" data-toggle="modal" data-target="#order">Get a Free Quote</button>
                     </div>
                 </div><!-- row -->
             </div><!-- container -->
@@ -275,6 +270,21 @@
         speed: 0.6,
         parallax: true
     });
+</script>
+
+<script>
+
+    var downloadLink = document.getElementById('quote');
+    addListener(downloadLink, 'click', function() {
+        ga('send', 'event', 'button', 'click', 'quote');
+    });
+
+
+    function addListener(element, type, callback) {
+        if (element.addEventListener) element.addEventListener(type, callback);
+        else if (element.attachEvent) element.attachEvent('on' + type, callback);
+    }
+
 </script>
 
 </body>
