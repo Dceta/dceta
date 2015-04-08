@@ -3,4 +3,16 @@
         <url>
             <loc>http://dceta.com</loc>
         </url>
+        <url>
+            <loc>http://dceta.com/about</loc>
+        </url>
+        <url>
+            <loc>http://dceta.com/cover-me</loc>
+        </url>
+        <url>
+            <loc>http://dceta.com/coincosm</loc>
+        </url>
+        <url>
+            <loc>http://dceta.com/woodluck</loc>
+        </url>
     </urlset>
