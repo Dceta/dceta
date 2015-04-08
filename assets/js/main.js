@@ -1,12 +1,20 @@
 (function($){
 
+    $('.send').click(function (e) {
+        e.preventDefault();
+        $(this).addClass('btn-disabled');
+        $(this).prop('disabled', true);
+        $.post("send-order.php", $(this).parents(".send-form").serialize(),function (response) {
+
+        });
+    });
+
     // Menu settings
     $('#menuToggle, .menu-close').on('click', function(){
         $('#menuToggle').toggleClass('active');
         $('body').toggleClass('body-push-toleft');
         $('#theMenu').toggleClass('menu-open');
     });
-
 
     // CAROUSEL PREVIEW
 

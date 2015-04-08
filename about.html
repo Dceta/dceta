@@ -166,9 +166,56 @@
                 </div><!-- row -->
             </div><!-- container -->
         </div>
-
     </div><!-- Call to action -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel1">Just send it, the response will be quick</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="send-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name1">Name</label>
+                                    <input id="name1" name="name" type="text" class="form-control" placeholder="Enter name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email1">Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                                        <input id="email1" name="email" type="email" class="form-control" placeholder="Enter email" required="required" /></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject1">Service</label>
+                                    <select id="subject1" name="subject" class="form-control" required="required">
+                                        <option value="" selected="">Choose only one at a time, please!</option>
+                                        <option value="Web Development">Web Development</option>
+                                        <option value="UI/UX">UI/UX</option>
+                                        <option value="Graphic Design">Graphic Design</option>
+                                        <option value="Branding">Branding</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="message1">Message</label>
+                                    <textarea id="message1" name="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary pull-right blue-btn send" id="btnContactUs1">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer id="footer" class="footer">
         <div class="container">

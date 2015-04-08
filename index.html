@@ -478,59 +478,41 @@
                 <h4 class="modal-title" id="myModalLabel1">Just send it, the response will be quick</h4>
             </div>
             <div class="modal-body">
-                <div class="">
-                    <form class="send-form">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name1" name="name" placeholder="Enter name" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email Address</label>
-                                    <div class="input-group">
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                </span>
-                                        <input type="email" class="form-control" id="email1" name="email" placeholder="Enter email" required="required" /></div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="subject1">Service</label>
-                                    <select id="subject1" name="subject" class="form-control" required="required">
-                                        <option value="" selected="">Choose only one at a time, please!</option>
-                                        <option value="Web Development">Web Development</option>
-                                        <option value="UI/UX">UI/UX</option>
-                                        <option value="Graphic Design">Graphic Design</option>
-                                        <option value="Branding">Branding</option>
-                                    </select>
-
-                                    <!--<div class="dropdown">
-                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                                            Dropdown
-                                            <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>-->
-                                </div>
+                <form class="send-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name1">Name</label>
+                                <input id="name1" name="name" type="text" class="form-control" placeholder="Enter name" required="required" />
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="name">Message</label>
-                                    <textarea name="message" id="message1" class="form-control" rows="9" cols="25" required="required"
-                                              placeholder="Message"></textarea>
-                                </div>
+                            <div class="form-group">
+                                <label for="email1">Email Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                                    <input id="email1" name="email" type="email" class="form-control" placeholder="Enter email" required="required" /></div>
                             </div>
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary pull-right blue-btn send" id="btnContactUs1">
-                                    Send Message</button>
+                            <div class="form-group">
+                                <label for="subject1">Service</label>
+                                <select id="subject1" name="subject" class="form-control" required="required">
+                                    <option value="" selected="">Choose only one at a time, please!</option>
+                                    <option value="Web Development">Web Development</option>
+                                    <option value="UI/UX">UI/UX</option>
+                                    <option value="Graphic Design">Graphic Design</option>
+                                    <option value="Branding">Branding</option>
+                                </select>
                             </div>
                         </div>
-                    </form>
-                </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="message1">Message</label>
+                                <textarea id="message1" name="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary pull-right blue-btn send" id="btnContactUs1">Send Message</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -640,17 +622,6 @@
         parallax: true
     });
 </script>
-
-<script>
-    $(document).ready(function() {
-        $('.carousel').carousel({
-            interval: false
-        })
-    });
-    /*$('.pull-down').each(function() {
-        $(this).css('margin-top', $(this).parent().height()-$(this).height())
-    });*/
-</script><!--    Remove this later   -->
 
 <script>
 
