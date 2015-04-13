@@ -584,7 +584,7 @@ input[type="text"], input[type="password"] {
     font-family: 'Fira Sans';
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
  .contact > .fa {
      margin-right: 10px
