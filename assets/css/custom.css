@@ -6,6 +6,49 @@ h4 {
     font-size: 24px;
 }
 
+
+
+/*   HEADER   */
+
+/*.navbar-brand {
+    line-height: 73px;
+    box-sizing: content-box;
+}*/
+
+.dceta-navbar {
+    min-height: 73px;
+    margin: 0
+}
+
+.navbar-nav > li >  a {
+    font-family: "Helvetica Neue";
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+
+}
+
+.navbar-nav
+{
+    border-color: #777;
+    border-width: 0px 0px 1px;
+
+}
+
+ul.navbar-nav {
+    text-align: center;
+    display: block;
+    float: none;
+
+}
+
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+.navbar-brand {float:none;}
+
 /* SVG wrap */
 .svg-wrap {
     position: absolute;
@@ -15,8 +58,10 @@ h4 {
 }
 
 .carousel {
+
     overflow: hidden;
     height: 800px;
+    /*margin-top: 73px*/
 }
 
 .carousel-control {
